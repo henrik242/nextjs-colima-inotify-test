@@ -1,0 +1,15 @@
+services:
+    web:
+        build:
+            context: web
+        expose:
+            - "4900"
+        ports:
+            - "0.0.0.0:4900:4900"
+        environment:
+            NODE_ENV: development
+        volumes:
+            - ./web:/app
+           # - ./components:/app/src/components
+        command: node_modules/.bin/next dev -p 4900
+
