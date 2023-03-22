@@ -1,9 +1,9 @@
 
 Test project where inotify doesn't seem to work at all on colima HEAD-eceb851
 ```
-brew reinstall colima --force-HEAD
 colima stop
 colima delete
+brew reinstall colima --force-HEAD
 colima start --cpu 4 --memory 8 --mount-inotify --very-verbose
 git clone https://github.com/henrik242/nextjs-colima-inotify-test
 cd nextjs-colima-inotify-test/web
