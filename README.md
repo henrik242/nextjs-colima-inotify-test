@@ -16,7 +16,7 @@ Now open http://localhost:4900/ and edit `foo` in `web/src/components/Layout.tsx
 
 But touching the file inside the container works:
 ```
-docker exec -ti <containerId> touch /app/src/components/Layout.tsx
+docker exec -ti nextjs-colima-inotify-test-web-1 touch /app/src/components/Layout.tsx
 ```
 
 Ref:
